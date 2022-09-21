@@ -1,4 +1,4 @@
-# leia um número qualquer e mostre seu fatorial
+# leia um número qualquer e mostre seu fatorial.
 num = int(input('Digite um número: '))
 print('Fatorial do número {}'.format(num))
 fatorial = 1
