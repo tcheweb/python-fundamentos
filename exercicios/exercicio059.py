@@ -7,19 +7,22 @@ vl1 = int(input('Primeiro número:'))
 vl2 = int(input('Segundo número: '))
 while opcao != 5:
     sleep(1)
-    print('''PRIMEIRO: {}  | SEGUNDO: {}
-    [ 1 ] SOMAR
-    [ 2 ] MULTIPLICAR
-    [ 3 ] MAIOR
-    [ 4 ] NOVOS NÚMEROS
-    [ 5 ] SAIR'''.format(vl1, vl2))
+    print('''
+            PRIMEIRO: {}  | SEGUNDO: {}
+            [ 1 ] SOMAR
+            [ 2 ] MULTIPLICAR
+            [ 3 ] MAIOR
+            [ 4 ] NOVOS NÚMEROS
+            [ 5 ] SAIR'''.format(vl1, vl2))
     opcao = int(input('ESCOLHA UMA DAS OPÇÕES ACIMA:'))
     if opcao == 1:
         soma = vl1 + vl2
         print('A soma de {} + {} = {}'.format(vl1, vl2, soma))
+        opcao = 0
     elif opcao == 2:
         multiplicacao = vl1 * vl2
         print('A multiplicação de {} x {} = {}'.format(vl1, vl2, multiplicacao))
+        opcao = 0
     elif opcao == 3:
         if vl1 > vl2:
             print('{} é maior que {}'.format(vl1, vl2))
@@ -32,6 +35,7 @@ while opcao != 5:
         print('Saindo...')
     else:
         print('Opção inválida!')
+        opcao = 0
 
 
 
